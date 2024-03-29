@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux"
-import { forwardRef, useEffect, useState } from "react"
+import { forwardRef, useEffect } from "react"
 import { Dialog, Slide } from "@mui/material"
 import { TransitionProps } from "@mui/material/transitions"
 
@@ -10,7 +10,6 @@ import HistoryLogItem from "./HistoryLogItem/HistoryLogItem"
 import { RootState } from "../../reducers/root-reducer"
 import { fetchLogs } from "../../api/api"
 import { setAllLogsLoading, setLogs } from "../../reducers/log.reducer"
-import LogModel from "../../models/Log.model"
 
 type HistoryProps = { isOpen: boolean; onCloseHistory: () => void }
 
